@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#canvas {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    height: 520px;
+    width: 520px;
+    flex-wrap: wrap;
+    border: 3px solid black;
+}
+
+.row {
+    display: flex;
+    margin-top: -1px;
+    margin-right: -1px;
+    flex: 1;
+}
+
+.square {
+    flex: 1;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.squareClicked {
+    background-color: black;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+button {
+    padding: 10px;
+}
