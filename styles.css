@@ -32,7 +32,45 @@ body {
     background-color: black;
 }
 
+.squareClickedBlue {
+    background-color: blue;
+}
+
+.squareClickedRed {
+    background-color: red;
+}
+
+.squareClickedGreen {
+    background-color: green;
+}
+
+.squareClickedOrange {
+    background-color: orange;
+}
+
+.squareClickedYellow {
+    background-color: yellow;
+}
+
+.squareClickedPurple {
+    background-color: purple;
+}
+
+.squareClickedPink {
+    background-color: pink;
+}
+
+.squareClickedBrown {
+    background-color: brown;
+}
+
 #buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#buttonsR {
     display: flex;
     flex-direction: column;
     gap: 20px;
