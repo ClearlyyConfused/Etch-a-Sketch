@@ -71,7 +71,7 @@ function toggleEraser(){
             this.classList.remove("squareClicked");
             this.classList.remove("squareClickedBlue");
             this.classList.remove("squareClickedRed");
-            this.classList.remove("squaredClickedGreen");
+            this.classList.remove("squareClickedGreen");
             this.classList.remove("squareClickedOrange");
             this.classList.remove("squareClickedYellow");
             this.classList.remove("squareClickedPurple");
