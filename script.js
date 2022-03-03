@@ -37,7 +37,33 @@ function changeSquares() {
         for (i = 1; i <= num; i++) {
             const canvasSquare = document.createElement("div");
             canvasSquare.classList.add("square");
-            canvasSquare.onmouseover = () => canvasSquare.classList.add("squareClicked");
+            if (color.value === "black") {
+                canvasSquare.onmouseover = () => canvasSquare.classList.add("squareClicked");
+            }
+            else if (color.value === "blue") {
+                canvasSquare.onmouseover = () => canvasSquare.classList.add("squareClickedBlue");
+            }
+            else if (color.value === "red") {
+                canvasSquare.onmouseover = () => canvasSquare.classList.add("squareClickedRed");
+            }
+            else if (color.value === "green") {
+                canvasSquare.onmouseover = () => canvasSquare.classList.add("squareClickedGreen");
+            }
+            else if (color.value === "orange") {
+                canvasSquare.onmouseover = () => canvasSquare.classList.add("squareClickedOrange");
+            }
+            else if (color.value === "yellow") {
+                canvasSquare.onmouseover = () => canvasSquare.classList.add("squareClickedYellow");
+            }
+            else if (color.value === "purple") {
+                canvasSquare.onmouseover = () => canvasSquare.classList.add("squareClickedPurple");
+            }
+            else if (color.value === "pink") {
+                canvasSquare.onmouseover = () => canvasSquare.classList.add("squareClickedPink");
+            }
+            else if (color.value === "brown") {
+                canvasSquare.onmouseover = () => canvasSquare.classList.add("squareClickedBrown");
+            }
             blackPen.style.background = "#ABB0B0";
             toggleEraserBTN.style.background = "";
             redPen.style.background = "";
@@ -392,3 +418,36 @@ function brownPenToggle(){
 
 const brownPen = document.querySelector("#brownPen");
 brownPen.addEventListener("click", brownPenToggle);
+
+function selectColor() {
+    if (color.value === "black") {
+        togglePen();
+    }
+    else if (color.value === "blue") {
+        bluePenToggle();
+    }
+    else if (color.value === "red") {
+        redPenToggle();
+    }
+    else if (color.value === "green") {
+        greenPenToggle();
+    }
+    else if (color.value === "orange") {
+        orangePenToggle();
+    }
+    else if (color.value === "yellow") {
+        yellowPenToggle();
+    }
+    else if (color.value === "purple") {
+        purplePenToggle();
+    }
+    else if (color.value === "pink") {
+        pinkPenToggle();
+    }
+    else if (color.value === "brown") {
+        brownPenToggle();
+    }
+}
+
+const color = document.querySelector("#color");
+color.addEventListener("change", selectColor);
