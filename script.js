@@ -415,6 +415,32 @@ function brownPenToggle(){
     };
 };
 
+function whitePenToggle(){
+    const canvasSquare = document.querySelectorAll(".square");
+    brownPen.style.background = "";
+    pinkPen.style.background = "";
+    purplePen.style.background = "";
+    yellowPen.style.background = ""
+    orangePen.style.background = "";
+    greenPen.style.background = "";
+    redPen.style.background = "";
+    bluePen.style.background = "";
+    blackPen.style.background = "";
+    toggleEraserBTN.style.background = "";
+    for (const square of canvasSquare) {
+        square.addEventListener("mouseover", function () {
+            this.classList.remove("squareClicked");
+            this.classList.remove("squareClickedBlue");
+            this.classList.remove("squareClickedRed");
+            this.classList.remove("squareClickedGreen");
+            this.classList.remove("squareClickedOrange");
+            this.classList.remove("squareClickedYellow");
+            this.classList.remove("squareClickedPurple");
+            this.classList.remove("squareClickedPink");
+            this.classList.remove("squareClickedBrown");
+        });
+    };
+};
 
 const brownPen = document.querySelector("#brownPen");
 brownPen.addEventListener("click", brownPenToggle);
@@ -422,6 +448,9 @@ brownPen.addEventListener("click", brownPenToggle);
 function selectColor() {
     if (color.value === "black") {
         togglePen();
+    }
+    else if (color.value === "white") {
+        whitePenToggle();
     }
     else if (color.value === "blue") {
         bluePenToggle();
