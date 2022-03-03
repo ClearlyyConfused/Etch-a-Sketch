@@ -1,10 +1,6 @@
 const canvas = document.querySelector("#canvas");
 let num = 50;
 
-function xd(){
-    alert("H");
-}
-
 for (x = 1; x <= num; x++) {
     const row = document.createElement("div");
     row.classList.add("row");
@@ -20,8 +16,20 @@ for (x = 1; x <= num; x++) {
 const numOfSquares = document.querySelector("#numOfSquares");
 numOfSquares.addEventListener("click", changeSquares);
 
+const amountOfSquares = document.querySelector("#amountOfSquares");
+amountOfSquares.addEventListener("keyup", function(e) {
+    if (e.key === "Enter") {
+        changeSquares();
+    }
+});
+
 function changeSquares() {
-    let num = prompt("How many squares do you want in a row/column?");
+    let num = amountOfSquares.value;
+
+    if (num < 1 || num > 100) {
+        return
+    }
+
     canvas.textContent = "";
     for (x = 1; x <= num; x++) {
         const row = document.createElement("div");
@@ -30,6 +38,16 @@ function changeSquares() {
             const canvasSquare = document.createElement("div");
             canvasSquare.classList.add("square");
             canvasSquare.onmouseover = () => canvasSquare.classList.add("squareClicked");
+            blackPen.style.background = "#ABB0B0";
+            toggleEraserBTN.style.background = "";
+            redPen.style.background = "";
+            greenPen.style.background = "";
+            purplePen.style.background = "";
+            brownPen.style.background = "";
+            pinkPen.style.background = "";
+            bluePen.style.background = "";
+            yellowPen.style.background = "";
+            orangePen.style.background = "";
             row.appendChild(canvasSquare);
         };
         canvas.appendChild(row);
