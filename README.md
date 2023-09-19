@@ -8,9 +8,9 @@ Simple website that creates an "etch-a-sketch"-like drawing canvas. It allows us
 
 ## Deployment 🚀
 
-https://clearlyyconfused.github.io/Etch-a-Sketch/
+https://louisdoan9.github.io/Etch-a-Sketch/
 
 ## Screenshots 📸
 
 ![App Screenshot 1](./README_images/Screenshot%202023-07-26%20171048.png)
-![App Screenshot 2](./README_images/Screenshot%202023-07-26%20171425.png)
+![App Screenshot 2](./README_images/Screenshot%202023-07-28%20153950.png)
