@@ -12,5 +12,5 @@ https://louisdoan9.github.io/Etch-a-Sketch/
 
 ## Screenshots 📸
 
-![App Screenshot 1](./README_images/Screenshot%202023-07-26%20171048.png)
-![App Screenshot 2](./README_images/Screenshot%202023-07-28%20153950.png)
+![App Screenshot 1](./README_images/etch-a-sketch.png)
+![App Screenshot 2](./README_images/etch-a-sketch2.png)
